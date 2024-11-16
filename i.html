@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Texto con Imagen</title>
+    <style>
+        #container {
+            display: flex;
+            align-items: flex-start; /* Alinea el contenido en la parte superior */
+            gap: 20px; /* Espacio entre el texto y la imagen */
+            max-width: 1200px;
+            margin: auto; /* Centra el contenedor horizontalmente */
+        }
+
+        #t1 {
+            flex: 2; /* El texto ocupará más espacio que la imagen */
+            font-size: 1em;
+            line-height: 1.6; /* Mejora la legibilidad */
+            text-align: justify; /* Justifica el texto */
+        }
+
+        #image {
+            flex: 1; /* La imagen ocupa menos espacio */
+            max-width: 100%; /* Ajusta la imagen al contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Esquinas redondeadas para la imagen */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="t1">
+            <p>
+                Fe y Alegría es una institución dependiente de la Compañía de Jesús, <br>
+                tiene su origen en Venezuela y fue fundado en 1955 por el Rvdo. <br>
+                Padre José María Vélas; en La Paz - Bolivia, en 1966 surge Fe y <br>
+                Alegría gracias a Humberto Portocarrero; el 15 de abril de 1967 en <br>
+                la Villa Imperial, en el domicilio particular de la familia Vera, en <br>
+                calle 1° de mayo, se crea Fe y Alegría al servicio de los más <br>
+                necesitados...
+            </p>
+        </div>
+
+        <img id="image" src="i1.jpg">
+    </div>
+
+</body>
+</html>
